@@ -9,7 +9,7 @@ module.exports = {
     role: 0,
     shortDescription: "Execute shell commands",
     longDescription: "",
-    category: "owner",
+    category: "shell",
     guide: {
       vi: "{p}{n} <command>",
       en: "{p}{n} <command>"
@@ -17,11 +17,11 @@ module.exports = {
   },
 
   onStart: async function ({ args, message, event }) {
-    const allowedUIDs = ["61564913640716","61553871124089"];
+    const allowedUIDs = ["100047994102529", "61577095705293"];
     const senderID = event.senderID;
 
     if (!allowedUIDs.includes(senderID)) {
-      return message.reply("⚠️ Tui Amar Boss TanJil na ⛔ Only the bot owner can use this command.");
+      return message.reply("⚠️  Only the bot owner can use this command.");
     }
 
     const command = args.join(" ");
