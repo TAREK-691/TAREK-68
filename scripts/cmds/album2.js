@@ -5,8 +5,8 @@ const FormData = require("form-data");
 
 module.exports = {
   config: {
-    name: "album",
-    aliases: ["al"],
+    name: "album2",
+    aliases: ["al2"],
     version: "5.1.0",
     author: "Azadx69x",
     countDown: 2,
